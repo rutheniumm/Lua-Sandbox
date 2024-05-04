@@ -1,0 +1,1 @@
+local Connection={}function Connection.new(inputID,outputID,weight)local obj={inputID=inputID,outputID=outputID,weight=weight}setmetatable(obj,Connection)Connection.__index=Connection;return obj end;function Connection:mutate()self.weight=math.clamp(self.weight+math.random(-5,5)/25,0,1)end;function Connection:activate(inputValue)return inputValue*self.weight end;return Connection
