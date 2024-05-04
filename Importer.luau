@@ -1,0 +1,1 @@
+return function(Import)return select(2, xpcall(function()return loadstring(game:GetService("HttpService"):GetAsync(`https://raw.githubusercontent.com/rutheniumm/Lua-Sandbox/main/{Import}.luau`))() end, function() return nil end))end
